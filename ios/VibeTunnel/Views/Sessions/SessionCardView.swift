@@ -186,7 +186,6 @@ struct SessionCardView: View {
         }
     }
 
-
     private func animateKill() {
         guard !isKilling else { return }
         isKilling = true
@@ -259,5 +258,4 @@ struct SessionCardView: View {
         }
         .padding(Theme.Spacing.small)
     }
-
 }

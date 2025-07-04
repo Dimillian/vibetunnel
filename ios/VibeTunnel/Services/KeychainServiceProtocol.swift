@@ -47,4 +47,3 @@ protocol KeychainServiceProtocol {
     /// - Throws: KeychainError if the operation fails
     func deletePassword(for key: String) throws
 }
-

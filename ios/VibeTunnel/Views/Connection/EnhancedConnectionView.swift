@@ -275,7 +275,6 @@ struct EnhancedConnectionView: View {
     }
 }
 
-
 // MARK: - Server Profile Edit View
 
 struct ServerProfileEditView: View {

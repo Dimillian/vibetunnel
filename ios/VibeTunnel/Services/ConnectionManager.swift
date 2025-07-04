@@ -42,7 +42,7 @@ final class ConnectionManager {
     /// - Parameter storage: Mock storage for testing
     /// - Returns: A new ConnectionManager instance for testing
     internal static func createForTesting(storage: PersistentStorage) -> ConnectionManager {
-        return ConnectionManager(storage: storage)
+        ConnectionManager(storage: storage)
     }
     #endif
 
@@ -123,4 +123,3 @@ final class ConnectionManager {
         serverConfig
     }
 }
-

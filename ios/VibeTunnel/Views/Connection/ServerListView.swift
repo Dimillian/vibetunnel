@@ -78,7 +78,7 @@ struct ServerListView: View {
                 )
             }
             .sheet(isPresented: $showingAddServer) {
-                AddServerView { newProfile in
+                AddServerView { _ in
                     viewModel.loadProfiles()
                 }
             }
