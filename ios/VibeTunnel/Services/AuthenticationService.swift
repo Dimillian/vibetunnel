@@ -273,9 +273,9 @@ final class AuthenticationService: ObservableObject {
                 throw AuthenticationError.invalidCredentials
             }
         } catch {
-            logger.error("Failed to retrieve password from keychain for profile: \(profile.name), error: \(keychainError)")
+            logger.error("Failed to retrieve password from keychain for profile: \(profile.name), error: \(error)")
             logger.debug("Looking for keychain item with account: server-\(profile.id)")
-            if let keychainErr = keychainError as? KeychainService.KeychainError {
+            if let keychainErr = error as? KeychainService.KeychainError {
                 switch keychainErr {
                 case .itemNotFound:
                     logger.debug("Keychain item not found for profile id: \(profile.id)")
